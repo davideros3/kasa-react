@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { makeServer } from "./mirage/server";
+
+// Start Mirage only in development
+if (import.meta?.env?.MODE === "development" || process.env.NODE_ENV === "development") {
+  makeServer();
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
