@@ -1,0 +1,71 @@
+@use '../base' as base;
+@use '../utilities/mixin' as mixin;
+
+.main-page {
+  
+  a {
+    color: base.$primary;
+    text-decoration: none;
+    padding: 0.25rem 1.5rem;
+    font-family: base.$font-style; 
+    position: relative;
+    font-size: 1.5rem; 
+     left: -80px;
+    bottom: -20px;            
+  }
+
+  a::after {
+    content: "";
+    position: absolute;
+    left: 23px;
+    bottom: 0px;                  
+    height: 1px;
+    width: 0;                    
+    background-color: base.$primary;   
+    transition: width .3s ease;    
+  }
+
+  a:hover::after,
+  a[aria-current="page"]::after { 
+    width: 60%;
+  }
+}
+
+
+// .main-menu {
+//   display: flex;
+//   gap: 0 2rem;
+
+//   @include mixin.is('desktop') {
+//     gap: 0 57px;
+//   }
+
+//   a {
+//     font-size: 1rem;
+//     font-weight: 500;
+//     color: base.$primary;
+//     text-transform: uppercase;
+//     position: relative;
+
+//     @include mixin.is('desktop') {
+//       font-size: 1.3rem;
+//       text-transform: capitalize;
+//     }
+
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       left: 23px;
+//       bottom: 0;
+//       height: 1px;
+//       width: 0;
+//       background-color: base.$primary;
+//       transition: width .3s ease;
+//     }
+
+//     &:hover::after,
+//     &[aria-current="page"]::after {
+//       width: 60%;
+//     }
+//   }
+// }

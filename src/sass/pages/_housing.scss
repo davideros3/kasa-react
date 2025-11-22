@@ -1,0 +1,68 @@
+.accommodation__header {
+  display: flex;
+  flex-direction: column;
+  color: #FF6060;
+}
+
+@media (min-width: 1024px) {
+  .accommodation__header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.accommodation__header .accommodation__infos {
+  flex: 1;
+}
+
+@media (min-width: 1024px) {
+  .accommodation__header .accommodation__infos {
+    flex: 1 0 60%;
+  }
+}
+
+.accommodation__header .accommodation__infos .accommodation__tags {
+  margin-top: 32px;
+}
+
+.accommodation__header .accommodation__host__infos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+@media (min-width: 1024px) {
+  .accommodation__header .accommodation__host__infos {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .accommodation__header .accommodation__host__infos .host {
+    order: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .accommodation__header .accommodation__host__infos .rate {
+    order: 2;
+    margin-top: 16px;
+  }
+}
+
+.accommodation__description {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 24px 0;
+}
+
+@media (min-width: 1024px) {
+  .accommodation__description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+  }
+}

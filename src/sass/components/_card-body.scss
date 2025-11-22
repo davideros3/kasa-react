@@ -1,0 +1,13 @@
+@use "../base" as base;
+
+.wohnung {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 58px;
+padding: 56px 50px;
+background-color: base.$secondary;
+border-radius: 25px;
+margin: 0em 6em;
+
+}
+

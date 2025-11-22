@@ -1,0 +1,45 @@
+@use "../base/" as base;
+.slider {
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  height: 380px;
+  border-radius: 25px;
+  transition: all 1s;
+
+  .slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    cursor: pointer;
+  }
+
+  .left-arrow {
+    left: 1rem;
+  }
+  .right-arrow {
+    right: 1rem;
+  }
+
+  .slider-counter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1rem;
+    background-color: base.$primary;
+    color: base.$white;
+    padding: 0.2rem 0.6rem;
+  }
+
+  .slide {
+    img {
+      height: 300px;
+      object-fit: cover;
+      width: 100%;
+      height: 380px;
+      transition: all 1s;
+    }
+  }
+}

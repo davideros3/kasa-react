@@ -1,0 +1,11 @@
+$breakpoints: (
+  'tablette': 992px,
+  'desktop':  1200px
+);
+
+
+@mixin is($breakpoint) {
+  @media (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}

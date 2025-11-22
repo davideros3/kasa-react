@@ -1,0 +1,22 @@
+@use "../base" as base;
+
+.footer {
+    background-color:base.$black;
+    padding: 3em 0 1em 0;
+    .logo {
+        display: block;
+        margin: 0 auto; 
+        width: 120px; 
+
+    }
+  
+   
+
+    p {
+        color: base.$white;
+        display: flex;
+        justify-content: center;
+        padding: 1em 0 0 0;
+    }
+}
+

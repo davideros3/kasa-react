@@ -1,0 +1,31 @@
+@use "../base" as base;
+@use "../utilities/mixin" as mixin;
+
+.hero-image {
+    display: flex;
+    align-items: center;
+    padding: 2em 7em 2em 6em ;
+    
+ 
+
+  img {
+    width: 100%;
+    height: 223px;
+    object-fit: cover;
+   
+  }
+
+  p {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: base.$white;
+    font-size: 2.5rem;
+    margin: 0;
+    z-index: 10;
+
+   
+  }
+}
+

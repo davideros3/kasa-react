@@ -1,0 +1,15 @@
+@use "../utilities/mixin" as mixin;
+
+.wohnung {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  padding: 1rem 0;
+  border-radius: 25px;
+
+  @include mixin.is("desktop") {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 58px;
+    padding: 56px 50px;
+  }
+}
