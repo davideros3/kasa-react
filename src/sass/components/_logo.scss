@@ -1,0 +1,13 @@
+@use '../utilities/mixin' as mixin;
+
+
+.logo {
+  height: auto;
+  width: 120px; 
+  object-fit: contain;
+
+  
+  @include mixin.is("desktop") {
+    width: 210px; 
+  }
+}

@@ -7,7 +7,7 @@ const HeroImage = ({text, image}) => {
         <section className="hero-image">
               <img src={image} alt="Hero visual" />
                 {text !== 'undefined' && <p>{text}</p>}
-
+                
         </section>
     )
 }

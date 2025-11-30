@@ -1,6 +1,11 @@
+@use "../utilities/mixin" as mixin;
+
+
 .about-wrapper {
   
-    padding: 1em 6em;
+     @include mixin.is('desktop') {
+      padding: 1em 6em;
+  }
   
 
   .accordion {

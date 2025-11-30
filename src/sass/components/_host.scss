@@ -1,3 +1,5 @@
+@use "../utilities/mixin" as mixin;
+
 .host {
   display: flex;
   align-items: center;
@@ -13,7 +15,10 @@
       max-width: 60px;
       border-radius: 50%;
       margin-left: 1rem;
-      max-width: 100px;
+      
+      @include mixin.is('desktop') {
+        max-width: 100px;
+      }
       
     }
 

@@ -1,13 +1,15 @@
 @use "../base" as base;
 @use "../utilities/mixin" as mixin;
 
-.header {
 
-    
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+
+  
   @include mixin.is("desktop") {
-    display: flex;
-    align-items: center;
     padding: 2em 2em 2em 6em;
-    justify-content: space-between;
   }
 }

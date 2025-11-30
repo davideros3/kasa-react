@@ -1,13 +1,24 @@
 @use "../base" as base;
+@use "../utilities/mixin" as mixin;
 
 .wohnung {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-gap: 58px;
-padding: 56px 50px;
-background-color: base.$secondary;
-border-radius: 25px;
-margin: 0em 6em;
 
+  display: grid;
+  grid-template-columns: 1fr;       
+  grid-gap: 20px;                   
+  padding: 1.6rem;                  
+  background-color: base.$white;    
+  border-radius: 25px;
+  margin: 0 1.3rem;                   
+
+  
+  @include mixin.is("desktop") {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 58px;
+    padding: 56px 50px;
+    background-color: base.$secondary;   
+    border-radius: 25px;
+    margin: 0em 6.2em;
+  }
 }
 
