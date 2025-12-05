@@ -2,7 +2,6 @@ import React from "react";
 import Card from "../components/Card";
 import HeroBan from "../components/Hero";
 import heroImage from "../assests/header.png";
-// import { useEffect, useState } from "react";
 import Hook from "../utilities/hook";
 import { Link } from "react-router-dom";
 

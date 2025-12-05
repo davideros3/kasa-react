@@ -8,7 +8,7 @@ import TagList from './TagList';
 
 
 const HeaderAccommodation = ({ title, location, host, tags, rating }) => {
-    console.log(tags);
+    console.log(location);
   return (
     <header className="accommodation__header">
       <section className="accommodation__infos">

@@ -1,6 +1,5 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Tag from "../components/TagList";
 import HeaderAccommodation from "../components/HeaderAccomodation";
 import Accordion from "../components/Accordion";
 import Carousel from "../components/Carousel";
@@ -16,9 +15,10 @@ const Housing = () => {
     return null;
   }
 
+
   const { 
     title, 
-    Location, 
+    location, 
     host, 
     tags, 
     rating,
@@ -27,9 +27,7 @@ const Housing = () => {
     description 
   } = wohnung;
   
-  // const tags = wohnung.tags?.map((tag, index) => (
-  //   <Tag key={index} value={tag} />
-  // )) || [];
+ 
 
 
   const equipments = Amenities?.map((amenity, index) => (
@@ -44,11 +42,13 @@ const Housing = () => {
           
           <HeaderAccommodation
             title={title}
-            location={Location}
+            location={location}
             host={host}
             tags={tags}
             rating={rating}
+          
           />
+         
 
           <section className="accommodation__description">
             <Accordion

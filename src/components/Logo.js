@@ -4,9 +4,9 @@ import React from 'react'
 
 const Logo = ({logo})  => {
   return (
-  // <NavLink to="/">
+ 
       <img className="logo" src={logo} alt="Logo Kasa" />
-  // {/* </NavLink>   */}
+  
   )
 }
 
