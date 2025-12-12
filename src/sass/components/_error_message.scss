@@ -1,31 +1,50 @@
 @use "../base" as base;
+@use "../utilities/mixin" as mixin;
 
 .error {
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 56px 50px;
+
+  padding: 2.5rem 1.25rem; 
+  text-align: center;
   color: base.$primary;
 
   h1 {
-    font-size: 4.5rem;
-    font-weight: 11rem;
-    margin-top: 0;
-
+    font-size: 3rem;       
+    font-weight: 700;       
+    margin: 0 0 1rem;
+    line-height: 1;
   }
 
   p {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 3rem;
-
- 
+    font-size: 1.25rem;   
+    margin: 0 0 2rem;
+    max-width: 32ch;       
   }
 
   a {
     color: base.$primary;
     text-decoration: underline;
+    font-size: 1rem;
   }
 
+  @include mixin.is("desktop") {
+    height: 90vh;
+
+    h1 {
+      font-size: 5.5rem;
+    }
+
+    p {
+      font-size: 3rem;
+      max-width: 60ch;
+    }
+
+    a {
+      font-size: 2.1rem;
+    }
+  }
 }

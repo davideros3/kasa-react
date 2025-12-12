@@ -4,7 +4,7 @@ const Hook = () => {
   const [wohnungen, setWohnungen] = useState([]);
 
   useEffect(() => {
-    fetch("/api/wohnungen")
+    fetch("http://localhost:3003/api/wohnungen")
       .then((res) => res.json())
       .then((data) => {
         console.log("Fetched list of flats:", data);
